@@ -2,7 +2,7 @@
 import './App.css';
 import { ToDoList } from './components/ToDoList';
 
-const App = () => {
+const App = ({exportData}) => {
   return (
     <div className="App">
       <ToDoList />

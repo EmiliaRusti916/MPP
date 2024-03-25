@@ -7,6 +7,7 @@ export const EditToDoForm = ({editTodo, task}) => {
     editTodo(todo, task.id);
     setTodo('');
   }
+
   return (
     <form className='todo-form' onSubmit={handleSubmit}>
         <input type='text' className='todo-input' placeholder='Update task here'
