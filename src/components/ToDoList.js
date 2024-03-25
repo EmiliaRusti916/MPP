@@ -17,7 +17,7 @@ export const ToDoList = () => {
   }, [])
 
   const addTodo = todo => {
-    const newTodos = [...todos, {id: uuidv4(), task: todo, completed: false, isEditing: false, checked: false}];
+    const newTodos = [...todos, {id: uuidv4(), task: todo, completed: false, isEditing: false}];
     setTodos(newTodos);
     localStorage.setItem('todos', JSON.stringify(newTodos));
   }
